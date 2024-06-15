@@ -5,8 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <title>Apple Website Home Page</title>
+  <script>
+    new Swiper('.swiper', {
+      slidesPerView: 3,
+      grid: {
+        rows: 3,
+      },
+      mousewheel: {
+        forceToAxis: true,
+      },
+    });
+  </script>
 </head>
 
 <body>
@@ -173,6 +185,19 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
+      <swiper-slide><img src="./images/british-flag.jpg" alt=""></swiper-slide>
+      <swiper-slide><img src="./images/hands-waving-.jpg" alt=""></swiper-slide>
+      <swiper-slide><img src="./images/hands-waving-flags.jpg" alt=""></swiper-slide>
+      <swiper-slide><img src="./images/small-cacti-with-white.jpg" alt=""></swiper-slide>
+
+    </swiper-container>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
